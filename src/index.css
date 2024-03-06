@@ -1,13 +1,66 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: 'Sora Variable';
+  src: url('../public/fonts/sora-latin-100-normal.ttf') format('ttf');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
 }
+@font-face {
+  font-family: 'Sora Variable';
+  src: url('../public/fonts/sora-latin-200-normal.ttf') format('ttf');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Sora Variable';
+  src: url('../public/fonts/sora-latin-300-normal.ttf') format('ttf');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Sora Variable';
+  src: url('../public/fonts/sora-latin-400-normal.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Sora Variable';
+  src: url('../public/fonts/sora-latin-500-normal.ttf') format('ttf');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Sora Variable';
+  src: url('../public/fonts/sora-latin-600-normal.ttf') format('ttf');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  background-color: #fff;
+  min-height: 100dvh;
+}
+
+html {
+  font-family: 'Sora Variable', sans-serif;
+}
+
+
+
+ion-icon {
+  color: #792323;
+  font-size: 42px;
+  cursor: pointer;
+}
+
