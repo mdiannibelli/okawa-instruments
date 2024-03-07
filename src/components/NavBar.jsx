@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react'
 import CartIcon from './icons/CartIcon'
-export default function NavBar() {
+export default function NavBar({cart, id}) {
     const [icon, setIcon] = useState('menu')
     const [isOpen, setIsOpen] = useState(false);
     const toggleMenu = () => {
@@ -25,8 +25,8 @@ export default function NavBar() {
                 <a className='text-white hover:text-primary duration-500 text-2xl font-light uppercase' href="/blog">Blog</a>
             </nav>
             </div>
+            <CartIcon cart={cart} id={id}/>
        
-            <CartIcon/>
         </div>
     </section>
   )
