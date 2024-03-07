@@ -6,7 +6,8 @@ module.exports = {
       colors: {
         primary: '#e13b3b',
         secondary: '#792323',
-        bgcolor: '#410e0e '
+        bgcolor: '#410e0e ',
+        filter: '#666'
       },
       fontFamily: {
         sora : "'Sora Variable', sans-serif;"

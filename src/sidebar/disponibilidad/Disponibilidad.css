@@ -1,0 +1,18 @@
+/* esconder input por defecto */
+input[type='checkbox'] {
+    display:none
+}
+
+.categories input:checked ~ .checkmark {
+    background-color: rgb(73, 73, 73);
+}
+
+.checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.categories input:checked ~ .checkmark::after {
+    display: block;
+}
+

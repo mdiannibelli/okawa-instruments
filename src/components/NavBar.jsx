@@ -1,6 +1,7 @@
-import React, { useRef, useState } from 'react'
+import React, {useState } from 'react'
 import CartIcon from './icons/CartIcon'
-export default function NavBar({cart, id}) {
+import Searcher from './Searcher'
+export default function NavBar({cart, deleteCart, deleteProduct, id, handleChange}) {
     const [icon, setIcon] = useState('menu')
     const [isOpen, setIsOpen] = useState(false);
     const toggleMenu = () => {
@@ -17,17 +18,18 @@ export default function NavBar({cart, id}) {
        
             <div className={` ${isOpen ? 'left-0' : 'left-[-100%]'}
             flex-col flex md:flex-row gap-x-8 gap-y-12 absolute md:static top-0 bg-responsive md:bg-none h-full w-[25dvh] md:w-auto transition-all duration-500`}>
-            <nav className='flex flex-col md:flex-row gap-x-8 mr-24 md:items-center absolute md:static left-6 top-20 gap-y-8 justify-center'>
+            <nav className='flex flex-col w-36 md:w-auto md:flex-row gap-x-8 mr-24 md:items-center absolute md:static left-6 top-20 gap-y-8 justify-center'>
                 <a href='/'><img className='size-32 flex md:hidden relative right-4 h-full object-cover' src="/okawa-instruments.png" alt="Okawa Instruments Logo" /></a>
                 <a className='text-white hover:text-primary duration-500 text-2xl font-light uppercase' href="/">Inicio</a>
-                <a className='text-white hover:text-primary duration-500 text-2xl font-light uppercase' href="/tienda">Tienda</a>
-                <a className='text-white hover:text-primary duration-500 text-2xl font-light uppercase' href="/nosotros">Nosotros</a>
+                <a className='text-white hover:text-primary duration-500 text-2xl font-light uppercase' href="/tienda">Shop</a>
+                <a className='text-white hover:text-primary duration-500 text-2xl font-light uppercase' href="/nosotros">About Us</a>
                 <a className='text-white hover:text-primary duration-500 text-2xl font-light uppercase' href="/blog">Blog</a>
             </nav>
             </div>
-            <CartIcon cart={cart} id={id}/>
+            <CartIcon deleteCart={deleteCart} deleteProduct={deleteProduct} cart={cart} id={id}/>
        
         </div>
+        <Searcher handleChange={handleChange}/>
     </section>
   )
 }
