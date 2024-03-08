@@ -3,6 +3,7 @@ import './App.css';
 import NavBar from './components/NavBar';
 import guitarsProducts from '../src/db/data';
 import Products from './components/Products';
+import Form from './components/Form'
 
 function App() {
   const [guitars, setGuitars] = useState(guitarsProducts);
@@ -56,6 +57,7 @@ function App() {
   return (
     <>
     <NavBar cart={cart} id={guitars.id} deleteCart={deleteCart} deleteProduct={deleteProduct} handleChange={handleChange}/>
+    <Form/>
     <Products
     handleChange={handleChange}
     guitars={guitars}
