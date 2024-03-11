@@ -1,6 +1,6 @@
 /* esconder input por defecto */
-input[type='checkbox'] {
-    display:none
+input[type='radio'] {
+    display: none
 }
 
 .categories input:checked ~ .checkmark {
@@ -15,4 +15,3 @@ input[type='checkbox'] {
 .categories input:checked ~ .checkmark::after {
     display: block;
 }
-

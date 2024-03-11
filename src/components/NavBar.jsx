@@ -1,7 +1,7 @@
 import React, {useState } from 'react'
 import CartIcon from './icons/CartIcon'
 import Searcher from './Searcher'
-export default function NavBar({cart, deleteCart, deleteProduct, id, handleChange}) {
+export default function NavBar() {
     const [icon, setIcon] = useState('menu')
     const [isOpen, setIsOpen] = useState(false);
     const toggleMenu = () => {
@@ -26,10 +26,10 @@ export default function NavBar({cart, deleteCart, deleteProduct, id, handleChang
                 <a className='text-white hover:text-primary duration-500 text-2xl font-light uppercase' href="/blog">Blog</a>
             </nav>
             </div>
-            <CartIcon deleteCart={deleteCart} deleteProduct={deleteProduct} cart={cart} id={id}/>
+            <CartIcon/>
        
         </div>
-        <Searcher handleChange={handleChange}/>
+        <Searcher/>
     </section>
   )
 }

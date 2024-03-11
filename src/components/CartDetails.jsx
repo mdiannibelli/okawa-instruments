@@ -1,9 +1,13 @@
-export default function CartDetails({cart, deleteCart, deleteProduct}) {
+import { useCart } from "../context/useContext"
+
+export default function CartDetails() {
+  const {cart, deleteCart, deleteProduct} = useCart();
+  console.log(cart)
   return ( 
     <div className='absolute right-0 top-36 bg-bgcolor z-10'>
         {cart.map(product => (
             <div key={product.id} className='flex justify-center items-center p-4'>
-                <img className='w-32' src={product.img} alt={product.name}/>
+                <img className='w-[120px] h-full mr-4' src={product.img} alt={product.name}/>
                 <div>
                 <h4 className='font-sora text-white text-[10px] text-pretty md:text-xs w-auto md:w-[240px]'>{product.name}</h4>
                 <span className='flex items-center gap-x-2 mt-1'>
@@ -11,7 +15,7 @@ export default function CartDetails({cart, deleteCart, deleteProduct}) {
                 <h5 className='font-sora text-white text-xs'>{product.finish}</h5>
                 </span>
                 <h5 className='font-sora text-white text-xs mt-1'>{product.handedness} hand</h5>
-                <span className='font-sora text-white text-xs'>{product.price}</span>
+                <span className='font-sora text-white text-xs'>{product.priceDesc}</span>
                 <div>
                 <span className='font-sora text-white text-xs'>Quantity:</span>
                 <div className='flex gap-x-2'>
