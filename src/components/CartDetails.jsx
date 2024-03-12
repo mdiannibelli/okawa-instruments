@@ -2,12 +2,12 @@ import { useCart } from "../context/useContext"
 
 export default function CartDetails() {
   const {cart, deleteCart, deleteProduct} = useCart();
-  console.log(cart)
+  // console.log(cart)
   return ( 
     <div className='absolute right-0 top-36 bg-bgcolor z-10'>
         {cart.map(product => (
             <div key={product.id} className='flex justify-center items-center p-4'>
-                <img className='w-[120px] h-full mr-4' src={product.img} alt={product.name}/>
+                <img className='w-auto max-h-[150px] mr-4' src={product.img} alt={product.name}/>
                 <div>
                 <h4 className='font-sora text-white text-[10px] text-pretty md:text-xs w-auto md:w-[240px]'>{product.name}</h4>
                 <span className='flex items-center gap-x-2 mt-1'>
@@ -27,7 +27,7 @@ export default function CartDetails() {
             </div>
         ))}
         <div className='flex justify-end items-center'>
-        {cart.length < 1 ? '' : <a href='#' className='rounded-xl bg-gray-500 hover:bg-gray-700 duration-300 text-white py-1 px-3 m-4'>Checkout</a>}
+        {cart.length < 1 ? '' : <a href='/cart' className='rounded-xl bg-gray-500 hover:bg-gray-700 duration-300 text-white py-1 px-3 m-4'>View Cart</a>}
         {cart.length < 1 ? '' : <button onClick={deleteCart} className='rounded-xl bg-primary hover:bg-red-700 duration-300 text-white py-1 px-3 m-4'>Delete Cart</button>}
         </div>
     </div>

@@ -21,8 +21,8 @@ export default function NavBar() {
             <nav className='flex flex-col w-36 md:w-auto md:flex-row gap-x-8 mr-24 md:items-center absolute md:static left-6 top-20 gap-y-8 justify-center'>
                 <a href='/'><img className='size-32 flex md:hidden relative right-4 h-full object-cover' src="/okawa-instruments.png" alt="Okawa Instruments Logo" /></a>
                 <a className='text-white hover:text-primary duration-500 text-2xl font-light uppercase' href="/">Inicio</a>
-                <a className='text-white hover:text-primary duration-500 text-2xl font-light uppercase' href="/tienda">Shop</a>
-                <a className='text-white hover:text-primary duration-500 text-2xl font-light uppercase' href="/nosotros">About Us</a>
+                <a className='text-white hover:text-primary duration-500 text-2xl font-light uppercase' href="/store">Store</a>
+                <a className='text-white hover:text-primary duration-500 text-2xl font-light uppercase' href="/about-us">About Us</a>
                 <a className='text-white hover:text-primary duration-500 text-2xl font-light uppercase' href="/blog">Blog</a>
             </nav>
             </div>

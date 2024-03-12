@@ -1,10 +1,16 @@
-import React, {useContext, createContext, useState} from 'react'
+import React, {useContext, createContext, useState, useEffect} from 'react'
 import guitarsProducts from '../db/data';
 const CartContext = createContext();
 
+const productsFromlocalStorage = JSON.parse(localStorage.getItem('cart') || '[]')
 
 export const CartProvider = ({children}) => {
-  const [cart, setCart] = useState([]);
+  const [cart, setCart] = useState(productsFromlocalStorage);
+
+  useEffect(() => {
+    localStorage.setItem('cart', JSON.stringify(cart))
+  },[cart])
+
   const [selected, setSelected] = useState(null);
   const [query, setQuery] = useState('');
 
@@ -59,7 +65,6 @@ export const CartProvider = ({children}) => {
 
   const handleClick = (e) => {
     setSelected(e.target.value)
-    console.log(e.target.value)
   }
 
   const filteredData = (guitarsProducts, selected, query) => {

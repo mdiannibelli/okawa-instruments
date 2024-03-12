@@ -16,7 +16,7 @@ const guitarsProducts = [
         id: 2,
         name: '1964 ES-335 Reissue, Bigsby, Custom Made Plate, Murphy Lab Light Aged, 60s Cherry',
         price: "8000",
-        priceDesc: '8,099.00',
+        priceDesc: '8099.00',
         img: '/guitars/1964-es-335.png',
         description: 'Semi-hollowbody, mahogany neck with 64 Medium C neck profile, rosewood fretboard with small block MOP inlays, Custombucker pickups, Bigsby vibrato and "Custom Made" plate, Murphy Lab Light Aged',
         finish: '60s Cherry',
@@ -29,7 +29,7 @@ const guitarsProducts = [
         id: 3,
         name: '1962 Les Paul SG Standard, Cherry, Short Maestro, Ebony Block, Murphy Lab Light Aged, Exclusive, Cherry',
         price: "8000",
-        priceDesc: '6,199.00',
+        priceDesc: '6199.00',
         img: '/guitars/1962-lespaul-sg.png',
         description: 'Mahogany body, mahogany neck with rosewood fretboard and 60s SlimTaper profile, Ebony Block short Maestro Vibrola, 2 Custombuckers, Murphy Lab Light Aged',
         finish: 'Cherry',
@@ -42,7 +42,7 @@ const guitarsProducts = [
         id: 4,
         name: 'Les Paul Standard 50s Figured Top, Translucent Fuchsia',
         price: "5000",
-        priceDesc: '2,799.00',
+        priceDesc: '2799.00',
         img: '/guitars/lespaul-standard-50s.png',
         description: 'The Les Paul™ Standard 50s Figured Top returns to the classic design that made it relevant, played, and loved – shaping sound across generations and genres of music. It pays tribute to Gibsons Golden Era of Innovation and brings authenticity back to life. It boasts a solid mahogany body, an AA figured maple top, and a distinctive translucent custom color nitrocellulose lacquer finish that showcases the figured maple top. The mahogany neck has a rounded 50s Vintage profile and a rosewood fingerboard with trapezoid inlays. The Les Paul Standard 50s Figured Top is equipped with an ABR-1, the classic-style Tune-O-Matic™ bridge, an aluminum Stop Bar tailpiece, Vintage Deluxe tuners with Keystone buttons, and gold Top Hat knobs. The calibrated Burstbucker™ 1 (neck) and Burstbucker 2 (bridge) pickups are loaded with Alnico 2 magnets and wired to audio taper potentiometers and Orange Drop® capacitors. A hardshell case is also included.',
         finish: 'Translucent Fuchsia',
@@ -55,7 +55,7 @@ const guitarsProducts = [
         id: 5,
         name: 'Les Paul Standard 60s Figured Top, Blueberry Burst',
         price: "5000",
-        priceDesc: '2,999.00',
+        priceDesc: '2999.00',
         img: '/guitars/lespaul-standard-60s.png',
         description: 'The Les Paul™ Standard 60s Figured Top returns to the classic design that made it relevant, played, and loved – shaping sound across generations and genres of music. It pays tribute to Gibsons Golden Era of Innovation and brings authenticity back to life. The Les Paul Standard 60s Figured Top has a solid mahogany body with an AA figured maple top visible beneath the new head-turning translucent custom color nitrocellulose lacquer finish. The mahogany neck has a 60s-style SlimTaper™ profile and a rosewood fingerboard with trapezoid inlays. The Les Paul Standard 60s Figured Top is equipped with a classic ABR-1 Tune-O-Matic™ bridge, aluminum Stop Bar tailpiece, Grover® Rotomatic® "Kidney" tuners, and gold Top Hat knobs with silver reflectors. The 60s Burstbucker™ pickups are loaded with Alnico 5 magnets and wired to audio taper potentiometers and Orange Drop® capacitors. A hardshell case is also included.',
         finish: 'Blueberry Burst',
@@ -68,7 +68,7 @@ const guitarsProducts = [
         id: 6,
         name: 'Les Paul Standard 50s Faded, Vintage Honey Burst',
         price: "5000",
-        priceDesc: '2,499.00',
+        priceDesc: '2499.00',
         img: '/guitars/lespaul-standard-50s-faded.png',
         description: 'The new Les Paul™ Standard 50s Faded returns to the classic design that made it relevant, played, and loved -- shaping sound across generations and genres of music. It pays tribute to Gibsons Golden Era of innovation and brings authenticity back to life. The Les Paul Standard 50s features a satin nitrocellulose lacquer finish that gives it the look and feel of a long-treasured musical companion. It has a solid mahogany body with an AA figured maple top and a rounded 50s-style mahogany neck with a rosewood fingerboard and trapezoid inlays. Its equipped with an ABR-1 Tune-O-Matic bridge, an aluminum Stop Bar tailpiece, Vintage Deluxe tuners with Keystone buttons, and gold Top Hat knobs with dial pointers. The open-coil Burstbucker™ 1 (neck) and Burstbucker 2 (bridge) pickups are hand-wired to audio taper potentiometers and Orange Drop® capacitors.',
         finish: 'Vintage Honey Burst',
@@ -81,7 +81,7 @@ const guitarsProducts = [
         id: 7,
         name: 'Les Paul Standard 60s Faded, Vintage Cherry Sunburst',
         price: "5000",
-        priceDesc: '2,499.00',
+        priceDesc: '2499.00',
         img: '/guitars/lespaul-standard-60s-faded.png',
         description: 'The new Les Paul™ Standard returns to the classic design that made it relevant, played, and loved -- shaping sound across generations and genres of music. It pays tribute to Gibsons Golden Era of innovation and brings authenticity back to life. The Les Paul Standard 60s features a satin nitrocellulose lacquer finish that gives it the look and feel of a long-treasured musical companion. It has a solid mahogany body with an AA figured maple top and a SlimTaper™ 60s-style mahogany neck with a rosewood fingerboard and trapezoid inlays. Its equipped with an ABR-1 Tune-O-Matic™ bridge, aluminum Stop Bar tailpiece, Grover® Rotomatic "Kidney" tuners, and gold Top Hat knobs with Silver Reflectors and Dial Pointers. The open-coil 60s Burstbucker™ pickups are loaded with Alnico 5 magnets and hand-wired to audio taper potentiometers and Orange Drop® capacitors.',
         finish: 'Vintage Cherry Sunburst',
@@ -94,7 +94,7 @@ const guitarsProducts = [
         id: 8,
         name: 'Les Paul Standard 50s, Heritage Cherry Sunburst',
         price: "5000",
-        priceDesc: '2,999.00',
+        priceDesc: '2999.00',
         img: '/guitars/lespaul-standard-50s-cherry.png',
         description: 'The new Les Paul™ Standard returns to the classic design that made it relevant, played, and loved – shaping sound across generations and genres of music. It pays tribute to Gibsons Golden Era of innovation and brings authenticity back to life. The Les Paul Standard 50s has a solid mahogany body with a maple top and a rounded 50s-style mahogany neck with a rosewood fingerboard and trapezoid inlays. Its equipped with an ABR-1, the classic-style Tune-O-Matic™ bridge, an aluminum Stop Bar tailpiece, Vintage Deluxe tuners with Keystone buttons, and aged gold Top Hat knobs. The calibrated Burstbucker™ 1 (neck) and Burstbucker 2 (bridge) pickups are loaded with Alnico 2 magnets and wired with audio taper potentiometers and Orange Drop® capacitors.',
         finish: 'Heritage Cherry Sunburst',
@@ -107,7 +107,7 @@ const guitarsProducts = [
         id: 9,
         name: 'Les Paul Standard 50s P-90, Tobacco Burst',
         price: "5000",
-        priceDesc: '2,799.00',
+        priceDesc: '2799.00',
         img: '/guitars/lespaul-standard-50s-p90.png',
         description: 'The new Les Paul Standard returns to the classic design that made it famous. It pays tribute to Gibsons Golden Era of innovation and brings authenticity back to life. The Les Paul Standard 50s P-90 has a solid mahogany body with a maple top and a rounded 50s-style mahogany neck with a rosewood fingerboard and trapezoid inlays. Its equipped with an ABR-1, the classic-style Tune-O-Matic™ bridge, an aluminum Stop Bar tailpiece, Vintage Deluxe tuners with Keystone buttons, and Top Hat knobs. The classic P-90 pickups (neck and bridge) are loaded with Alnico 5 magnets, audio taper potentiometers, and Orange Drop® capacitors.',
         finish: 'Tobacco Burst',
@@ -120,7 +120,7 @@ const guitarsProducts = [
         id: 10,
         name: 'American Vintage II Stratocaster® 1954 70° Aniversario',
         price: "5000",
-        priceDesc: '2,999.00',
+        priceDesc: '2999.00',
         img: '/guitars/fender-american-vintage.jpg',
         description: `En Fender® celebramos las siete décadas de tono atemporal y estilo único de la Stratocaster® con la colección especial 70° Aniversario. Cada modelo Stratocaster 70° Aniversario reproduce los sonidos tan legendarios que han hecho de la Strat® un icono sin igual en el mundo de la guitarra. Estos instrumentos son del agrado tanto de los músicos que buscan una Strat de tipo vintage, como de los guitarristas modernos que quieren una guitarra versátil con la que tocar la música actual. La colección Stratocaster 70° Aniversario es fiel a la historia de Fender®.
 
@@ -137,7 +137,7 @@ const guitarsProducts = [
         id: 11,
         name: 'American Ultra Stratocaster® HSS 70° Aniversario',
         price: "5000",
-        priceDesc: '2,999.00',
+        priceDesc: '2999.00',
         img: '/guitars/fender-american-ultra.jpg',
         description: `En Fender® celebramos las siete décadas de tono atemporal y estilo único de la Stratocaster® con la colección especial 70° Aniversario. Cada modelo Stratocaster 70° Aniversario reproduce los sonidos tan legendarios que han hecho de la Strat® un icono sin igual en el mundo de la guitarra. Estos instrumentos son del agrado tanto de los músicos que buscan una Strat de tipo vintage, como de los guitarristas modernos que quieren una guitarra versátil con la que tocar la música actual. La colección Stratocaster 70° Aniversario es fiel a la historia de Fender®.
 
@@ -154,7 +154,7 @@ const guitarsProducts = [
         id: 12,
         name: 'American Professional II Stratocaster® 70º Aniversario',
         price: "5000",
-        priceDesc: '2,359.00',
+        priceDesc: '2359.00',
         img: '/guitars/fender-american-profesional.jpg',
         description: `Presentamos la colección Stratocaster® 70º Aniversario: Estas guitarras celebran las siete décadas de tono atemporal y estilo icónico de las Strat. Cada modelo Stratocaster de esta edición 70º Aniversario cuenta con las principales características que hicieron tan popular a este instrumento, y por supuesto, con los sonidos legendarios que convirtieron a la Strat® en un icono sin igual. Tanto los músicos más puristas de lo vintage, como los guitarristas progresivos que buscan prestaciones de vanguardia, encontrarán en esta colección un modelo que cumplirá con sus expectativas. Cada guitarra 70º Aniversario es fiel al legado de la Stratocaster y conmemora la gran historia de Fender®.
 
@@ -171,7 +171,7 @@ const guitarsProducts = [
         id: 13,
         name: 'Stratocaster® Bruno Mars de Edición Limitada',
         price: "5000",
-        priceDesc: '3,479.00',
+        priceDesc: '3479.00',
         img: '/guitars/fender-bruno-mars.jpg',
         description: `Canaliza tu magia interior de 24K con la elegante e irresistible Stratocaster® Bruno Mars de Edición Limitada.
 
@@ -201,7 +201,7 @@ const guitarsProducts = [
         id: 15,
         name: 'Limited Edition American Professional II Stratocaster®, Ebony Fingerboard with Black Headstock, Candy Apple Red',
         price: "2500",
-        priceDesc: '2,179.00',
+        priceDesc: '2179.00',
         img: '/guitars/fender-limited-edition.jpg',
         description: `The American Professional II Stratocaster® draws from more than sixty years of innovation, inspiration and evolution to meet the demands of today's working player.
 
@@ -218,7 +218,7 @@ const guitarsProducts = [
         id: 16,
         name: 'American Vintage II 1961 Stratocaster®',
         price: "2500",
-        priceDesc: '2,489.00',
+        priceDesc: '2489.00',
         img: '/guitars/fender-american-vintage-ii.jpg',
         description: `La serie Fender® American Vintage II presenta una versión notablemente precisa de los diseños revolucionarios que alteraron el curso de la historia musical. Construidos con cuerpos, mástiles y herrajes precisos de la época, acabados de primera calidad y pastillas específicas del año con una sonoridad meticulosa, cada instrumento captura la esencia de la auténtica artesanía y el tono de Fender.
         Durante finales de los años 50 y principios de los 60, la popularidad de los instrumentos musicales Fender floreció y, aunque la variedad de Fender se había ampliado para incluir muchos instrumentos nuevos y fantásticos, la Stratocaster® reinaba por encima de todo. Para 1961, la Stratocaster había adquirido una estética más refinada, con un Sunburst de 3 colores reformulado con un rojo más vibrante y un borde negro más audaz, rematado con un golpeador de 3 capas que acentuaba las curvas características de la Stratocaster.
@@ -248,7 +248,7 @@ const guitarsProducts = [
         id: 18,
         name: 'American Ultra Stratocaster®, Sea Foam Green, de Edición Limitada',
         price: "5000",
-        priceDesc: '2,689.00',
+        priceDesc: '2689.00',
         img: '/guitars/fender-american-ultra-sea.jpg',
         description: `La serie American Ultra está integrada por nuestras guitarras y bajos más avanzados. Son instrumentos pensados para los músicos modernos que demandan lo último en precisión, rendimiento y tono. La American Ultra Stratocaster tiene un mástil con el perfil en forma de "Modern D" y los bordes del diapasón redondeados para ofrecer la máxima comodidad a los músicos. El nuevo talón del mástil permite acceder con comodidad a los últimos trastes. El diapasón de radio compuesto de 10" - 14" (254 mm - 355,6 mm) sobre el que encontramos 22 trastes medium-jumbo es ideal para ejecutar solos a gran velocidad y con la máxima precisión. En el apartado electrónico, las pastillas single-coil Ultra Noiseless™ Vintage, junto con las opciones avanzadas de cableado, proporcionan infinitas posibilidades sonoras sin emitir ningún ruido de fondo. Además, esta Strat cuenta con un interruptor S-1, que al activarlo, añade la pastilla del mástil en cualquiera de las posiciones del selector. Los contornos rediseñados de la parte trasera del cuerpo son tan estéticos como funcionales. Esta guitarra tan versátil y vanguardista inspirará a cualquier guitarrista en la búsqueda de sus nuevos límites musicales.
 
@@ -263,7 +263,7 @@ const guitarsProducts = [
         id: 19,
         name: 'Player Plus Stratocaster® zurdos',
         price: "2500",
-        priceDesc: '1,079.00',
+        priceDesc: '1079.00',
         img: '/guitars/fender-player-zurdo.jpg',
         description: `Fusionando el diseño clásico de Fender® con características centradas en el guitarrista y nuevos y emocionantes acabados, la Player Plus Stratocaster® ofrece una comodidad excelente y un estilo inconfundible.
 
@@ -280,7 +280,7 @@ const guitarsProducts = [
         id: 20,
         name: 'American Vintage II 1957 Stratocaster® Left-Hand',
         price: "2500",
-        priceDesc: '2,369.00',
+        priceDesc: '2369.00',
         img: '/guitars/fender-american-vintage-zurda.jpg',
         description: `La serie Fender® American Vintage II presenta una versión notablemente precisa de los diseños revolucionarios que alteraron el curso de la historia musical. Construidos con cuerpos, mástiles y herrajes precisos de la época, acabados de primera calidad y pastillas específicas del año con una sonoridad meticulosa, cada instrumento captura la esencia de la auténtica artesanía y el tono de Fender.
 
@@ -301,7 +301,7 @@ const guitarsProducts = [
         id: 21,
         name: 'American Vintage II 1961 Stratocaster® Left-Hand',
         price: "2500",
-        priceDesc: '2,389.00',
+        priceDesc: '2389.00',
         img: '/guitars/fender-american-vintage-zurda-ii.jpg',
         description: `La serie Fender® American Vintage II presenta una versión notablemente precisa de los diseños revolucionarios que alteraron el curso de la historia musical. Construidos con cuerpos, mástiles y herrajes precisos de la época, acabados de primera calidad y pastillas específicas del año con una sonoridad meticulosa, cada instrumento captura la esencia de la auténtica artesanía y el tono de Fender.
         Durante finales de los años 50 y principios de los 60, la popularidad de los instrumentos musicales Fender floreció y, aunque la variedad de Fender se había ampliado para incluir muchos instrumentos nuevos y fantásticos, la Stratocaster® reinaba por encima de todo. Para 1961, la Stratocaster había adquirido una estética más refinada, con un Sunburst de 3 colores reformulado con un rojo más vibrante y un borde negro más audaz, rematado con un golpeador de 3 capas que acentuaba las curvas características de la Stratocaster.
@@ -318,7 +318,7 @@ const guitarsProducts = [
         id: 22,
         name: 'American Professional II Stratocaster® Left-Hand',
         price: "2500",
-        priceDesc: '2,169.00',
+        priceDesc: '2169.00',
         img: '/guitars/fender-american-profesional-ii.jpg',
         description: `La American Professional II Stratocaster® se basa en más de sesenta años de innovación, inspiración y evolución para satisfacer las demandas del músico de hoy en día.
 
@@ -335,7 +335,7 @@ const guitarsProducts = [
         id: 23,
         name: 'Limited Edition American Ultra Telecaster®, Umbra',
         price: "5000",
-        priceDesc: '2,849.00',
+        priceDesc: '2849.00',
         img: '/guitars/telecaster-limited-edition.jpg',
         description: `La serie American Ultra de guitarras y bajos es la más avanzada para músicos exigentes que exigen lo último en precisión, rendimiento y tono. La American Ultra Telecaster presenta un exclusivo perfil de mástil de " D moderna” con bordes de diapasón redondeados para horas de comodidad, y la forma del talón del mástil permite un fácil acceso al registro más alto. Un veloz diapasón de radio compuesto de 10 "a 14" con 22 trastes medium jumbo para solos precisos y sin esfuerzo, mientras que las pastillas Ultra Noiseless ™ y las opciones avanzadas de cableado brindan infinitas posibilidades de sonido: sin zumbidos. Este versátil instrumento de última generación te inspirará a llevar tu interpretación a nuevas alturas. Otras características incluyen clavijeros de bloqueo sellados, herrajes cromados y cejilla de hueso. Incluye estuche rígido moldeado de primera calidad.`,
         finish: 'Red Wood',
@@ -348,7 +348,7 @@ const guitarsProducts = [
         id: 24,
         name: 'Acoustasonic® Player Telecaster®',
         price: "2500",
-        priceDesc: '1,119.00',
+        priceDesc: '1119.00',
         img: '/guitars/acoustasonic.jpg',
         description: 'La American Acoustasonic ™ Telecaster® encarna el espíritu de innovación sobre el que se construyó Fender. Desde un sonido auténticamente acústico hasta los tonos de ritmo eléctrico, esta poderosa guitarra ofrece una nueva expresión sonora diseñada por Fender y Fishman® tanto para el estudio como para el escenario.',
         finish: 'Sunburst',
@@ -361,7 +361,7 @@ const guitarsProducts = [
         id: 25,
         name: 'Telecaster® Thinline Vintera® II 60s',
         price: "2500",
-        priceDesc: '1,209.00',
+        priceDesc: '1209.00',
         img: '/guitars/telecaster-thinline.jpg',
         description: `Revive el sonido atemporal de los años 60 con la Vintera® II '60s Telecaster® Thinline y experimenta la apariencia icónica, la sensación inspiradora y el tono incomparable que solo un Fender puede ofrecer.
 
@@ -378,7 +378,7 @@ const guitarsProducts = [
         id: 26,
         name: 'Joe Strummer Telecaster®',
         price: "2500",
-        priceDesc: '1,749.00',
+        priceDesc: '1749.00',
         img: '/guitars/joe-strummer.jpg',
         description: `Como líder y compositor principal de la legendaria banda de punk, The Clash, Joe Strummer creó una marca de punk-rock ardiente y llena de pasión que catapultó a la banda a la historia del rock and roll. La sensibilidad musical rebelde de Strummer inyectó las canciones de la banda con un inusual potencial para la época.
 
@@ -393,7 +393,7 @@ const guitarsProducts = [
         id: 27,
         name: 'Made in Japan Traditional 50s Telecaster® Left-Handed',
         price: "2500",
-        priceDesc: '1,499.00',
+        priceDesc: '1499.00',
         img: '/guitars/telecaster-japan.jpg',
         description: `Made in Japan Traditional series derived by combining the aesthetics of Fender's traditional musical instrument production with the sophisticated craftsmanship of Japan. Fender's orthodox DNA is a reliable Made in Japan quality. I will be resurrected. Made in Japan Traditional '50s Telecaster® Left-Handed has a gloss finish basswood body. A 9.5-inch radius "U" shaped maple neck with 21 vintage-style frets provides a classic performance that is unique to the Traditional series. A vintage-style Sting-Through-Body bridge with three brass saddles, and the original pickups selected for the Traditional series play a realistic and musical vintage tone. The narrowly designed nut width makes it easy for Japanese players to play. Solid guitar craftsmanship and flexible answers to player needs are reflected in this series.`,
         finish: 'Solid Wood',
@@ -406,7 +406,7 @@ const guitarsProducts = [
         id: 28,
         name: 'ES-345, Gold Hardware - Wine Red, Exclusive',
         price: "5000",
-        priceDesc: '3,899.00',
+        priceDesc: '3899.00',
         img: '/guitars/es-345.png',
         description: `The Gibson ES-345 boasts a number of aesthetic enhancements over the flagship ES-335. Crafted with a maple centerblock and quarter-sawn Adirondack spruce bracing, players will be impressed by the lightweight feel and expanded range of tonal capabilities. The body is wrapped in multi-ply binding and the bound fingerboard has Split Parallelogram inlays exclusive to this model in the ES™ series. The ES-345 is equipped with a variety of high-end appointments like our hand-wired control assembly with Orange Drop® capacitors, Gibson's new Calibrated T-Type humbucking pickups, Vintage Deluxe style tuners and lightweight aluminum ABR-1 bridge and Stop Bar tailpiece anchored with steel thumb-wheels and studs. The ES-345 can be finished in either a vintage antiqued gloss Sixties Cherry or Vintage Burst.`,
         finish: 'Wine Red',
@@ -419,7 +419,7 @@ const guitarsProducts = [
         id: 29,
         name: 'SG Supreme - Fireburst',
         price: "5000",
-        priceDesc: '3,499.00',
+        priceDesc: '3499.00',
         img: '/guitars/sg-sunburst.png',
         description: `Gibson is excited to announce the return of the SG™ Supreme. With a refreshed feature set, it is bound to overshadow everything else in sight and be one of the most exciting new releases of the year. It features a beautiful AAA-figured maple top (plain maple on the 3-pickup Gibson exclusive model) on a mahogany body. The mahogany neck has an ebony fretboard with a compound radius, 24 medium jumbo frets, and Super Split Block mother-of-pearl inlays. The headstock is adorned with a striking new mother-of-pearl "Chandelier Inlay" inspired by a design from the 1940s that was discovered in the Gibson archives. The Burstbucker™ Pro and Burstbucker Pro + pickups are paired with push/pull volume controls for coil tapping, along with individual tone controls (master tone control on the 3-pickup exclusive model). The three beautiful finishes are elegantly highlighted with gold hardware, making this not only a great-sounding and highly flexible instrument but also an exceptionally beautiful-looking modern rock machine. A hardshell case is also included. `,
         finish: 'Fireburst',
@@ -432,7 +432,7 @@ const guitarsProducts = [
         id: 30,
         name: 'Les Paul Modern Studio - Wine Red Satin',
         price: "2500",
-        priceDesc: '1,999.00',
+        priceDesc: '1999.00',
         img: '/guitars/lespaul-studio.png',
         description: `For years, the Les Paul™ Studio has been the choice of countless guitarists who appreciate the combination of an Ultra Modern weight-relieved mahogany body and maple cap paired with simplified cosmetic appointments. This cherished model has now been refined as the Les Paul Modern Studio. It incorporates improvements and enhanced features, many taken directly from the Les Paul Modern, including a bound ebony fretboard with a compound radius for improved action and playability, a Modern Contoured Heel for exceptional upper-fret access, black nickel hardware, and in addition to coil tapping, additional switching for control over phase and pure bypass. A soft shell case is included with this no-nonsense, high-performance tone machine.`,
         finish: 'Wine Red',
@@ -445,7 +445,7 @@ const guitarsProducts = [
         id: 31,
         name: '1959 ES-335 Reissue Brunswick Blue Light Aged (Left-Handed) - Brunswick Blue',
         price: "10000",
-        priceDesc: '12,589.00',
+        priceDesc: '12589.00',
         img: '/guitars/1959-left.png',
         description: `The Historic Reissue ES-335 is back and better than ever, thanks to a year of studying, scanning, and listening to original examples. The expert craftspeople at Gibson Custom Shop have rendered every contour, profile, inlay, and color of the priceless vintage models in magnificent detail. The result is a playing and ownership experience that will keep you coming back for more. The 1959 ES™ Reissue models feature rounded cutaways, Medium C-shape neck profiles scanned from originals, dot inlays, and vintage-replica parts. It also features Light Aging by the skilled artisans of the Murphy Lab. The Murphy Lab Light Aged finish treatment, paired with lightly aged hardware, simulates decades of light play wear, giving it the unique character, vibe, and feel of an original example from the Gibson Golden Era. `,
         finish: 'Brunswick Blue',
@@ -458,7 +458,7 @@ const guitarsProducts = [
         id: 32,
         name: 'Tony Iommi SG Special (Left-Handed) - Vintage Cherry',
         price: "2500",
-        priceDesc: '2,399.00',
+        priceDesc: '2399.00',
         img: '/guitars/sg-left.png',
         description: `Tony Iommi's iconic riffs, heavy tones, and massively influential albums created the blueprint for heavy metal and many other genres to follow. His career, like the man himself, is universally loved and revered. And while his innovative tuning and playing styles were a major part of his monstrous tones, a heavily modified 1964 Gibson SG was at the center of it all. Now Gibson USA has made a guitar based on the iconic original that launched countless heavy riffs, with a mahogany body, bound mahogany neck with a rounded profile, Indian rosewood fretboard with 22 frets, a Graph Tech® nut, Grover® Rotomatic® tuners with contemporary style buttons, and chrome-covered P-90 pickups. A reproduction of Tony's "Monkey" sticker is included in the case, along with two longer intonation adjustment screws in case you need additional adjustment range. A right-handed version is also available. `,
         finish: 'Vintage Cherry',
@@ -471,7 +471,7 @@ const guitarsProducts = [
         id: 33,
         name: 'ML1 BARITONE PRO MODERN',
         price: "2500",
-        priceDesc: '1,179.99',
+        priceDesc: '1179.99',
         img: '/guitars/chapman-ml1-baritone.png',
         description: `The Baritone has always been a fundamental part of our line up and is now available in the all-new ML1 Pro Modern.
 
@@ -489,7 +489,7 @@ const guitarsProducts = [
         id: 34,
         name: 'LAW MAKER LEGACY BARITONE',
         price: "2500",
-        priceDesc: '1,099.00',
+        priceDesc: '1099.00',
         img: '/guitars/law-maker-legacy.png',
         description: `The Chapman Law Maker Legacy Baritone is built on the solid foundation of its predecessor, featuring a 28” Baritone scale length, unlocking the realm of low tunings and unleashing brutal tones.
         In captivating Ocean Moss Blue finish, the Lawmaker Legacy Baritone is absolutely brutal, yet remains articulate through subtle details in design, which echo its glory from the past - this guitar promises to redefine your musical journey`,
@@ -503,7 +503,7 @@ const guitarsProducts = [
         id: 35,
         name: 'LAW MAKER LEGACY',
         price: "2500",
-        priceDesc: '1,099.99',
+        priceDesc: '1099.99',
         img: '/guitars/law-maker.png',
         description: `Introducing the Chapman Lawmaker Legacy – a guitar that stands as a testament to Chapmans’ uncompromising quality and craftsmanship.
         In striking Forest Moss Green, the Lawmaker Legacy boasts a transparent satin coating that reveals the natural beauty of its Alder body and Flame Maple top. But it’s the Rosewood neck and fingerboard that steal the show, adding richness and depth to your playing experience.`,
@@ -558,7 +558,7 @@ const guitarsProducts = [
         id: 39,
         name: 'ML3 PRO MODERN',
         price: "2500",
-        priceDesc: '1,079.99',
+        priceDesc: '1079.99',
         img: '/guitars/ml3-pro-modern.png',
         description: `The ML3 Pro Modern has always been know for its thick, powerful tone and lightning fast playability, but now we have juiced up this work-horse with new materials, tech and exciting spec. Equipped with a pair of hand built Seymour Duncan Humbuckers, an Alnico 5 loaded Sentient which delivers a very articulate vintage output pickup with great dynamic response and a Pegasus which gives a wide harmonic range and a delivers a warm, balanced, responsive, and lush tone for progressive metal, you’ll have a hard job putting it down. The powerful combination of baked maple and Basswood together with Stainless Steel frets all wrapped up in a stunning satin metallic finish will give you everything you need to dominate the stage.`,
         finish: 'Hot White',

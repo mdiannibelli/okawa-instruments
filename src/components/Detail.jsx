@@ -8,7 +8,7 @@ export default function Detail({data}) {
         <div className='flex md:w-[640px] h-[380px] md:h-[640px] justify-center'>
           <img src={data.img} className='object-cover w-auto h-full' />
         </div>
-        <div className='flex flex-col gap-y-4 mt-6 md:mt-0'>
+        <div className='flex flex-col gap-y-4 mt-6 md:mt-0 border-2 border-gray-200 rounded-md p-12'>
           <h1 className='font-sora text-xl md:text-4xl uppercase max-w-md'>{data.name}</h1>
           <p className='font-sora text-xs md:text-sm max-w-md'>{data.description && data.description.length > 200 ? `${data.description.slice(0, 800)}...` : data.description}</p>
           <hr></hr>
