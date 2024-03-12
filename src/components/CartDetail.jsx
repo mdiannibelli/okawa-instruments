@@ -23,7 +23,7 @@ export default function CartDetail({cart, increase, decrease,addToCart, deletePr
                             <h4 className='outline-none text-gray-500 w-16 text-center border-2 border-gray-300 rounded-md'>{counter[index]}</h4>
                             <button type='button' onClick={() => (increase(index), addToCart(product))} className='text-white px-3 h-6 my-auto bg-secondary hover:bg-primary duration-300 rounded-md'>+</button>
                             </div>
-                            <button onClick={() => (deleteProduct(product.id), decrease(index))} className='ml-2 border-2 rounded-md border-secondary text-xs px-2 text-gray-600 hover:bg-gray-700 hover:text-white duration-300'>Remove</button>
+                            <button onClick={() => (deleteProduct(product.id), decrease(index))} className='ml-2 rounded-md border-secondary text-xs px-2 text-gray-600 hover:bg-gray-700 hover:text-white duration-300'>Remove</button>
                         </div>
                     </div>
                 </div>
