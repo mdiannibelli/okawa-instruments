@@ -2,9 +2,12 @@ import React from 'react'
 import Sidebar from '../sidebar/Sidebar'
 import Card from './Card.jsx';
 import { useCart } from '../context/useContext.jsx';
+import Categories from './Categories.jsx';
 export default function Products() {
   const {result} = useCart();
   return (
+    <>
+    <Categories/>
     <section className='flex justify-center mt-8 p-8 lg:p-10 xl:px-32'>
       <Sidebar/>
         <div className='grid grid-cols-2 lg:grid-cols-3 gap-8'>
@@ -17,5 +20,7 @@ export default function Products() {
         }
         </div>
     </section>
+
+    </>
   ) 
 }

@@ -1,11 +1,13 @@
-import React from 'react'
+import { useParams, useNavigate} from 'react-router-dom';
 import { useCart } from '../context/useContext'
-export default function Card({product, img, name, price, id}) {
+export default function Card({product, img, name, price}) {
   const {addToCart} = useCart();
+  const {id} = useParams();
+  const navegate = useNavigate();
   return (
       <div key={id}>
-          <div className='p-4 border-2 mb-4 w-auto'>
-          <img src={img} className='h-[220px] md:h-[420px] w-auto object-cover flex mx-auto'/>
+          <div className='p-4 border-2 mb-4 w-auto flex justify-center'>
+          <button onClick={() => navegate(`/products/${product.id}`)}><img src={img} className='h-[220px] md:h-[420px] w-auto object-cover flex mx-auto'/></button>
           </div>
           <h3 className='text-[10px] md:text-sm font-sora font-bold text-pretty'>{name}</h3>
           <div className='flex justify-between items-center mt-3'>
