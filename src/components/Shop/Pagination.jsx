@@ -14,10 +14,18 @@ export default function Pagination() {
 
     const previousPage = () => {
         setCurrentPage(currentPage - 1)
+        window.scrollTo({
+            top:0,
+            behavior: 'instant'
+        })
     }
 
     const nextPage = () => {
         setCurrentPage(currentPage + 1)
+        window.scrollTo({
+            top:0,
+            behavior: 'instant'
+        })
     }
 
     const onSpecificPage = (p) => {
