@@ -4,10 +4,12 @@ import Card from './Card.jsx';
 import { useCart } from '../../context/useContext.jsx';
 import Categories from '../Categories/Categories.jsx';
 import Pagination from './Pagination.jsx';
+import Searcher from '../Navbar/Searcher.jsx';
 export default function Products() {
   const {result, lastIndex, firstIndex} = useCart();
   return (
     <>
+    <Searcher/>
     <Categories/>
     <section className='flex justify-center mt-8 p-8 lg:p-10 xl:px-32'>
       <Sidebar/>

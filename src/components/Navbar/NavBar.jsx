@@ -1,6 +1,5 @@
 import React, {useState } from 'react'
 import CartIcon from '../icons/CartIcon'
-import Searcher from './Searcher'
 import { NavLink } from 'react-router-dom';
 export default function NavBar() {
     const [icon, setIcon] = useState('menu')
@@ -31,7 +30,6 @@ export default function NavBar() {
             <CartIcon/>
        
         </div>
-        <Searcher/>
     </section>
   )
 }
