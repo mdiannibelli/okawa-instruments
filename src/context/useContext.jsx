@@ -5,7 +5,13 @@ const CartContext = createContext();
 const productsFromlocalStorage = JSON.parse(localStorage.getItem('cart') || '[]')
 
 export const CartProvider = ({children}) => {
+  const [productsPerPage, setProductsPerPage] = useState(12);
+  const [currentPage, setCurrentPage] = useState(1);
   const [cart, setCart] = useState(productsFromlocalStorage);
+  
+  //pagination
+  const lastIndex = currentPage * productsPerPage // 12
+  const firstIndex = lastIndex - productsPerPage // 0
 
   useEffect(() => {
     localStorage.setItem('cart', JSON.stringify(cart))
@@ -107,6 +113,11 @@ const result = filteredData(guitarsProducts, selected, query);
         handleClick,
         handleInputChange,
         filteredData,
+        productsPerPage,
+        currentPage,
+        setCurrentPage,
+        firstIndex,
+        lastIndex
     }}
     >
         {children}

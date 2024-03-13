@@ -425,7 +425,7 @@ const guitarsProducts = [
         finish: 'Fireburst',
         color: 'https://images.ctfassets.net/m8onsx4mm13s/0vaxV31R39Xra6P3659lKT/617c1e6c6992946cba9c2bca0aed9dc5/__static.gibson.com_product-images_Epiphone_EPIB4J646_Fireburst_Fireburst.jpg',
         handedness: 'Right',
-        category: 'Les Paul',
+        category: 'SG',
         partner: 'Gibson'
     },
     {
@@ -464,7 +464,7 @@ const guitarsProducts = [
         finish: 'Vintage Cherry',
         color: 'https://images.ctfassets.net/m8onsx4mm13s/5O4gyJHCRpGdEkSpvhVzgv/dabf743b4da1989a727f411b4f997e69/__static.gibson.com_product-images_Epiphone_EPINKN592_Vintage_Cherry_Vintage_Cherry.jpg',
         handedness: 'Left',
-        category: 'Les Paul',
+        category: 'SG',
         partner: 'Gibson'
     },
     {
