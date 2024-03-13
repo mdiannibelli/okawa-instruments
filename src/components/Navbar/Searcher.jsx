@@ -1,4 +1,4 @@
-import { useCart } from "../context/useContext"
+import { useCart } from "../../context/useContext"
 
 export default function Searcher() {
     const {handleInputChange} = useCart();

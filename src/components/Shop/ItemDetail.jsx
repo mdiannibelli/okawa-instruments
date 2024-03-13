@@ -1,5 +1,5 @@
 import {useParams} from 'react-router-dom'
-import db from '../db/data'
+import db from '../../db/data'
 import Detail from './Detail'
 import { useEffect, useState } from 'react';
 export default function ItemDetail() {

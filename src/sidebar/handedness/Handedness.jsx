@@ -1,4 +1,4 @@
-import Input from "../../components/Input";
+import Input from "../../components/Categories/Input";
 import { useCart } from "../../context/useContext";
 export default function Handednnes() {
     const {handleChange} = useCart();

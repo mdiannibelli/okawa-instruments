@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import CartDetails from '../CartDetails'
+import CartDetails from '../Shop/CartDetails'
 import { useCart } from '../../context/useContext'
 export default function CartIcon() {
   const {cart} = useCart();

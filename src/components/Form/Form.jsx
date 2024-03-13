@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import useFormulario from '../hooks/useFormulario'
+import useFormulario from '../../hooks/useFormulario'
 import InputForm from './InputForm'
-import Container from './Container'
+import Container from '../Container'
 export default function Form() {
     const regexEmail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
     const initial = {

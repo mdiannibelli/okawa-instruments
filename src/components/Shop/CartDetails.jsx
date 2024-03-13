@@ -1,4 +1,4 @@
-import { useCart } from "../context/useContext"
+import { useCart } from "../../context/useContext"
 
 export default function CartDetails() {
   const {cart, deleteCart, deleteProduct} = useCart();
@@ -9,18 +9,18 @@ export default function CartDetails() {
             <div key={product.id} className='flex justify-center items-center p-4'>
                 <img className='w-auto max-h-[150px] mr-4' src={product.img} alt={product.name}/>
                 <div>
-                <h4 className='font-sora text-white text-[10px] text-pretty md:text-xs w-auto md:w-[240px]'>{product.name}</h4>
+                <h4 className='text-white text-[10px] text-pretty font-semibold md:text-xs w-auto md:w-[240px]'>{product.name}</h4>
                 <span className='flex items-center gap-x-2 mt-1'>
                 <img className='size-4' src={product.color} alt={product.finish} />
-                <h5 className='font-sora text-white text-xs'>{product.finish}</h5>
+                <h5 className='text-white text-xs'>{product.finish}</h5>
                 </span>
-                <h5 className='font-sora text-white text-xs mt-1'>{product.handedness} hand</h5>
-                <span className='font-sora text-white text-xs'>{product.priceDesc}</span>
+                <h5 className='text-white text-xs mt-1'>{product.handedness} hand</h5>
+                <span className='text-white text-xs'>{product.priceDesc}</span>
                 <div>
-                <span className='font-sora text-white text-xs'>Quantity:</span>
+                <span className='text-white text-xs'>Quantity:</span>
                 <div className='flex gap-x-2'>
                 <span className='w-20 block text-center bg-primary text-bgcolor focus:outline-none'>{product.quantity}</span>
-                <button onClick={() => deleteProduct(product.id)} className='text-white text-[10px] font-sora'>Delete</button>
+                <button onClick={() => deleteProduct(product.id)} className='text-white text-[10px] '>Delete</button>
                 </div>
                 </div>
                 </div>

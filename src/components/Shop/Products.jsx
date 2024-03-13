@@ -1,8 +1,8 @@
 import React from 'react'
-import Sidebar from '../sidebar/Sidebar'
+import Sidebar from '../../sidebar/Sidebar.jsx'
 import Card from './Card.jsx';
-import { useCart } from '../context/useContext.jsx';
-import Categories from './Categories.jsx';
+import { useCart } from '../../context/useContext.jsx';
+import Categories from '../Categories/Categories.jsx';
 import Pagination from './Pagination.jsx';
 export default function Products() {
   const {result, lastIndex, firstIndex} = useCart();
