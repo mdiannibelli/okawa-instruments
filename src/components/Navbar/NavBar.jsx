@@ -20,10 +20,10 @@ export default function NavBar() {
             flex-col flex md:flex-row gap-x-8 gap-y-12 absolute md:static top-0 bg-responsive md:bg-none h-full w-full md:w-auto transition-all duration-500 z-20`}>
             <nav className='flex flex-col w-36 md:w-auto md:flex-row gap-x-8 mr-24 md:items-center absolute md:static left-6 top-20 gap-y-8 justify-center'>
                 <NavLink to='/'><img className='size-32 flex md:hidden relative right-4 h-full object-cover' src="/okawa-instruments.png" alt="Okawa Instruments Logo" /></NavLink>
-                <NavLink to='/' className='text-white hover:text-primary duration-500 text-lg lg:text-xl font-bold  uppercase'>Inicio</NavLink>
-                <NavLink to='/store' className='text-white hover:text-primary duration-500 text-lg lg:text-xl font-bold uppercase'>Store</NavLink>
-                <NavLink to='/about-us' className='text-white hover:text-primary duration-500 text-lg lg:text-xl font-bold uppercase'>About Us</NavLink>
-                <NavLink to='/contact' className='text-white hover:text-primary duration-500 text-lg lg:text-xl font-bold uppercase'>Contact</NavLink>
+                <NavLink onClick={toggleMenu} to='/' className='text-white hover:text-primary duration-500 text-lg lg:text-xl font-bold  uppercase'>Inicio</NavLink>
+                <NavLink onClick={toggleMenu} to='/store' className='text-white hover:text-primary duration-500 text-lg lg:text-xl font-bold uppercase'>Store</NavLink>
+                <NavLink onClick={toggleMenu} to='/about-us' className='text-white hover:text-primary duration-500 text-lg lg:text-xl font-bold uppercase'>About Us</NavLink>
+                <NavLink onClick={toggleMenu} to='/contact' className='text-white hover:text-primary duration-500 text-lg lg:text-xl font-bold uppercase'>Contact</NavLink>
             </nav>
             </div>
             <CartIcon/>

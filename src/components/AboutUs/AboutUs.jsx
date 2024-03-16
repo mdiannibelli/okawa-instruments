@@ -4,7 +4,7 @@ import SocialMedia from './SocialMedia'
 export default function AboutUs() {
   return (
     <>
-    <section className='max-w-auto md:max-w-[640px] lg:max-w-[840px] xl:max-w-[1140px] mx-auto '>
+    <section className='max-w-auto md:max-w-[640px] lg:max-w-[840px] xl:max-w-[1140px] mx-auto my-8'>
         <div className='flex flex-col gap-y-8'>
             <header className='flex flex-col gap-y-6 mt-12 md:mt-0'>
                 <h1 className='text-2xl px-4 md:px-0 md:text-5xl uppercase text-gray-800'>About Okawa</h1>
