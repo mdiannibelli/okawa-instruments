@@ -62,8 +62,8 @@ export default function Checkout() {
     })
   return (
     <div className='flex flex-col items-center min-h-[100dvh] mt-12 mb-8'>
-        <h1 className='text-4xl text-primary font-thin uppercase mb-12'>Complete with your information</h1>
-        <form onSubmit={formik.handleSubmit} className='w-[480px] flex flex-col gap-y-4'>
+        <h1 className='text-2xl p-2 text-center md:text-start md:text-4xl text-primary font-thin uppercase mb-12'>Complete with your information</h1>
+        <form onSubmit={formik.handleSubmit} className='md:w-[400px] lg:w-[480px] flex flex-col gap-y-4'>
             <div className='flex flex-col w-full'>
             <label className='font-thin text-lg mb-1'>Full Name</label>
             <input value={formik.values.fullname} onChange={formik.handleChange} name='fullname' type='text' placeholder='Full Name' className='outline-none border-[1px] border-gray-300 rounded-md  px-4 py-2'/>
