@@ -9,7 +9,7 @@ export default function NavBar() {
         setIcon(!isOpen ? 'close' :'menu')
     } 
   return (
-    <section className='fixed md:relative w-full h-full'>
+    <section className='md:relative w-full h-full max-h-screen z-100'>
         <div className='flex justify-center bg-bgcolor md:justify-evenly items-center bg-[linear-gradient(90deg,rgba(0,0,0,.84),rgba(25,14,14,0.97)),url(../public/imgs/nav-img.jpg)] bg-cover bg-center'>
         <header>
             <a href='/'><img className='size-24 md:w-36 h-full object-cover' src="/okawa-instruments.png" alt="Okawa Instruments Logo" /></a>
