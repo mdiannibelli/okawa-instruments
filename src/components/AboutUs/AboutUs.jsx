@@ -15,7 +15,7 @@ export default function AboutUs() {
                 <h1 className='text-3xl font-medium text-gray-800 px-2 md:px-0'>Saul Hudson (Slash)</h1>
                 <h2 className='text-lg font-regular text-gray-800 px-2 md:px-0'>President & Main Guitarist</h2>
                 <p>
-                    <img src="/imgs/slash-modern.jpg" alt="slash" className='w-[880px] object-cover h-auto' />
+                    <img src="https://i.postimg.cc/MG7gk5jQ/slash-modern.jpg" alt="slash" className='w-[880px] object-cover h-auto' />
                 </p>
                 <p className='font-medium text-gray-800 text-xs md:text-lg p-4 md:p-0 md:max-w-5xl md:mt-4'>Born into a family of musicians, Slash, the visionary behind Okawa, developed a deep-seated love for music from an early age. Growing up surrounded by the melodious tunes of his parents' jazz band, Slash' fascination with musical instruments and their craftsmanship blossomed into a lifelong passion. Despite initially pursuing a career in finance, Slash' heart always remained tethered to the world of music.</p>
                 <p className='font-medium text-gray-800 text-xs md:text-lg p-4 md:p-0 md:max-w-5xl md:mt-4'>After years of working in corporate finance, Slash couldn't shake the feeling that something was missing. Longing to combine his financial acumen with his love for music, he embarked on a journey to realize his dream of creating a haven for musicians—a place where artistry and commerce intersected harmoniously. Thus, in the vibrant year of 1995, Okawa was born.</p>
