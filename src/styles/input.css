@@ -16,6 +16,10 @@ input[type='radio'] {
     display: block;
 }
 
+#root {
+    min-height: screen;
+}
+
 .is-current {
     background-color: #e13b3b;
 }

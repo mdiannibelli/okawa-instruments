@@ -1,10 +1,14 @@
 import React, {useContext, createContext, useState, useEffect} from 'react'
-import guitarsProducts from '../db/data';
+/* import guitarsProducts from '../db/data'; */
+import firebaseProducts from '../hooks/useFirebase';
+
 const CartContext = createContext();
 
 const productsFromlocalStorage = JSON.parse(localStorage.getItem('cart') || '[]')
 
 export const CartProvider = ({children}) => {
+  // firebase products 
+  const {data} = firebaseProducts()
   const [productsPerPage, setProductsPerPage] = useState(12);
   const [currentPage, setCurrentPage] = useState(1);
   const [cart, setCart] = useState(productsFromlocalStorage);
@@ -20,7 +24,8 @@ export const CartProvider = ({children}) => {
   const [selected, setSelected] = useState(null);
   const [query, setQuery] = useState('');
 
-  const filteredItems = guitarsProducts.filter((guitar) => guitar.name.toLowerCase().indexOf(query.toLowerCase()) !== -1)
+  const filteredItems = data.filter((guitar) => guitar.name.toLowerCase().indexOf(query.toLowerCase()) !== -1)
+  /* const filteredItems = guitarsProducts.filter((guitar) => guitar.name.toLowerCase().indexOf(query.toLowerCase()) !== -1) <== data.js render importing /db/data */
 
   const addToCart = (guitar) => {
     const existInCart = cart.find(x => x.id === guitar.id)
@@ -73,8 +78,8 @@ export const CartProvider = ({children}) => {
     setSelected(e.target.value)
   }
 
-  const filteredData = (guitarsProducts, selected, query) => {
-    let products = guitarsProducts;
+  const filteredData = (data, selected, query) => {
+    let products = data;
     if(query) {
       products = filteredItems;
     }
@@ -98,7 +103,7 @@ export const CartProvider = ({children}) => {
     handedness
   }));
 }
-const result = filteredData(guitarsProducts, selected, query);
+const result = filteredData(data, selected, query);
   return (
     <CartContext.Provider
     value={{

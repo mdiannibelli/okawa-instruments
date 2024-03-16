@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Footer() {
   return (
-    <footer className='flex justify-evenly flex-col md:flex-row items-center bg-[#010101] pt-8 pb-20 px-4'>
+    <footer className='flex justify-evenly flex-col md:flex-row items-center bg-[#010101] pt-8 pb-20 px-4 min-w-screen'>
         <div>
             <img src='./okawa-instruments.png' alt='logo' className='md:w-52 lg:size-36 xl:size-52'/>
         </div>

@@ -1,9 +1,24 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useCart } from '../../context/useContext'
 
-export default function Detail({data}) {
+export default function Detail({data, id}) {
+    const [details, setDetails] = useState([]);
     const {addToCart} = useCart();
+
+    // Only for firebase, else use only data to .map
+    useEffect(() => {
+      const guitars = data.find(guitar => guitar.id == id)
+      if(guitars) {
+        setDetails([guitars])
+      } else {
+        setDetails([])
+      }
+  }, [data, id])
+
+    
   return (
+    <div key={id}>
+    {details.map((data) => (
     <section key={data.id} className='flex justify-center items-center min-h-[100dvh] m-4 flex-col md:flex-row'>
         <div className='flex md:w-[640px] h-[380px] md:h-[640px] justify-center'>
           <img src={data.img} className='object-cover w-auto h-full' />
@@ -30,5 +45,7 @@ export default function Detail({data}) {
           </section>
         </div>
     </section>
+    ))}
+    </div>
   )
 }
