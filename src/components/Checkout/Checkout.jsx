@@ -11,7 +11,6 @@ export default function Checkout() {
     const [loading, setLoading] = useState(false)
     const [itemsToAdd, setItemsToAdd] = useState([])
     const [orderId, setOrderId] = useState('')
-    const [buyer, setBuyer] = useState({})
     useEffect(() => {
         setItemsToAdd(cart.map((product) => ({
             id: product.id,
@@ -21,7 +20,7 @@ export default function Checkout() {
         })))
     }, [])
     //console.log(itemsToAdd)
-    // console.log(buyer)
+    // console.log(values)
 
     const calculateTotal = () => {
         return itemsToAdd.reduce((total, product) => {
@@ -81,12 +80,10 @@ export default function Checkout() {
         validate,
         onSubmit: values => {
             formik.resetForm(values);
-            setLoading(true)
-            setBuyer(values)
             //console.log(values)
             const sale = collection(firebaseDB, "orders");
             addDoc(sale, {
-                buyer,
+                buyer: values,
                 items: cart,
                 total: calculateTotal(),
                 date: serverTimestamp()
@@ -157,7 +154,7 @@ export default function Checkout() {
         <div className='flex flex-col items-center gap-y-2'>
          <h1 className='text-2xl md:text-4xl uppercase font-black'>¡Thanks for buying!</h1>
          <h3 className='text-sm md:text-2xl font-medium'>Your order id is: {orderId}</h3>
-         <img src="https://i.postimg.cc/FKdH7mRD/model-black.jpg" alt="logo"  className='w-[450px] h-[450px'/>
+         <img src="https://i.postimg.cc/FKdH7mRD/model-black.jpg" alt="logo"  className='w-[450px] h-[450px]'/>
         </div>
         <NavLink to='/' className='font-bold text-lg text-white bg-secondary hover:bg-bgcolor duration-300 px-8 py-4 rounded-md uppercase'>Back to home</NavLink>
      </div>
