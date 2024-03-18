@@ -80,6 +80,7 @@ export default function Checkout() {
         validate,
         onSubmit: values => {
             formik.resetForm(values);
+            setLoading(true)
             //console.log(values)
             const sale = collection(firebaseDB, "orders");
             addDoc(sale, {
