@@ -92,7 +92,11 @@ export default function Checkout() {
                 deleteCart()
             }).catch(err => (
                 console.log('Error at setting order', err)
-            )).finally(() => setLoading(false))
+            )).finally(() => {
+                setTimeout(() => {
+                    setLoading(false)
+            }, 3000)
+        })
         }
     })
 
