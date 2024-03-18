@@ -1,9 +1,34 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import {useFormik} from 'formik'
+import { useCart } from '../../context/useContext'
+import { firebaseDB } from '../../firebase/firebase-data'
+import SpinnerLoading from '../SpinnerLoading'
+import { addDoc, collection, serverTimestamp } from 'firebase/firestore'
+import { NavLink } from 'react-router-dom'
 
 export default function Checkout() {
-    const [buyer, setBuyer] = useState([])
-    console.log(buyer)
+    const {cart, deleteCart} = useCart()
+    const [loading, setLoading] = useState(false)
+    const [itemsToAdd, setItemsToAdd] = useState([])
+    const [orderId, setOrderId] = useState('')
+    const [buyer, setBuyer] = useState({})
+    useEffect(() => {
+        setItemsToAdd(cart.map((product) => ({
+            id: product.id,
+            name: product.name,
+            price: product.priceDesc,
+            quantity: product.quantity
+        })))
+    }, [])
+    //console.log(itemsToAdd)
+    // console.log(buyer)
+
+    const calculateTotal = () => {
+        return itemsToAdd.reduce((total, product) => {
+            return total + parseInt(product.price) + parseInt(product.quantity)
+        }, 0)
+    }
+
     const validate = values => {
         const errors = {};
         if(!values.fullname) {
@@ -56,11 +81,31 @@ export default function Checkout() {
         validate,
         onSubmit: values => {
             formik.resetForm(values);
+            setLoading(true)
             setBuyer(values)
             //console.log(values)
+            const sale = collection(firebaseDB, "orders");
+            addDoc(sale, {
+                buyer,
+                items: cart,
+                total: calculateTotal(),
+                date: serverTimestamp()
+            }).then((res) => {
+                setOrderId(res.id),
+                deleteCart()
+            }).catch(err => (
+                console.log('Error at setting order', err)
+            )).finally(() => setLoading(false))
         }
     })
+
+    if(loading) {
+        return <SpinnerLoading/>
+    }
+
   return (
+    <>
+    {!orderId ?
     <div className='flex flex-col items-center min-h-[100dvh] mt-12 mb-8'>
         <h1 className='text-2xl p-2 text-center md:text-start md:text-4xl text-primary font-thin uppercase mb-12'>Complete with your information</h1>
         <form onSubmit={formik.handleSubmit} className='md:w-[400px] lg:w-[480px] flex flex-col gap-y-4'>
@@ -107,5 +152,16 @@ export default function Checkout() {
             <button className='bg-secondary hover:bg-primary duration-300 text-white text-xl py-2 rounded-xl mt-2' type='submit'>Send</button>
         </form>
     </div>
+     :
+     <div className='flex flex-col justify-center items-center p-8 md:p-20 gap-y-8'>
+        <div className='flex flex-col items-center gap-y-2'>
+         <h1 className='text-2xl md:text-4xl uppercase font-black'>¡Thanks for buying!</h1>
+         <h3 className='text-sm md:text-2xl font-medium'>Your order id is: {orderId}</h3>
+         <img src="https://i.postimg.cc/FKdH7mRD/model-black.jpg" alt="logo"  className='w-[450px] h-[450px'/>
+        </div>
+        <NavLink to='/' className='font-bold text-lg text-white bg-secondary hover:bg-bgcolor duration-300 px-8 py-4 rounded-md uppercase'>Back to home</NavLink>
+     </div>
+    }
+    </>
   )
 }
